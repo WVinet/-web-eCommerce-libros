@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box; /*los objetos de la pagina usan el espaciado interno y externo*/
+    margin: 0; /*no hay margenes*/
+    padding: 0; /*no hay espacios*/
+}
+
+body{
+    /* hay que decidir color de fondo y letras */
+    background-color: lightseagreen;
+}
+/* hero comienzo prueba */
+.hero{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center; /*centra horizontalmente*/
+    align-items: center; /*centra verticalmente*/
+    overflow: hidden;
+
+}
+
+.hero #imgfondo{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* hero fin */
+a{
+    /* personalizacion de los enlaces */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Navegacion */
+.nav_main{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between; /*para que usen todo el espacio*/
+    /* background-color: lightcoral; borrar */
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.nav_logo{
+    height:44px; width:auto; object-fit:contain; display:block;
+}
+
+
+/*nav left*/
+.nav_main ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav_main ul li{
+    padding: 10px;
+}
+
+.nav_main ul li a{
+    padding: 2px;
+    transition: border-bottom .2s ease;
+}
+.nav_main ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav_main ul.nav_menu{
+    flex: 1; 
+    margin-left: 20px;
+}
+
+h1{
+    color: white;
+}
+
+/* personalizacion textos principal */
+.titulo_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    z-index: 10;
+}
+
+/*personalizacion textos secundarios  */
+.otros_titulos{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+
